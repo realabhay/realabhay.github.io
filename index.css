@@ -4,7 +4,7 @@ header{
     padding: 10px;
     background-color: antiquewhite;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 body{
@@ -71,4 +71,23 @@ a{
     .col{
         width: 100%;
     }
+  }
+
+
+  .navigation{
+      background-color: aqua;
+      margin-bottom: 5px;
+      padding: 3px 0px;
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .navigation .button{
+      display: inline-block;
+      padding: 10px 30px;
+      background-color: rgba(0, 0, 0, 0.25);
+      font-size: 25px;
+      font-weight: 100;
+      text-decoration: none;
   }
