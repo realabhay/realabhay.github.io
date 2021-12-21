@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscussHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <ul class="nav-list">
+                    <span class="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                    <li class="nav-items"><a href="detail.html">Detail</a></li>
+                    <li class="nav-items"><a href="posts.html">Posts</a></li>
+                    <li class="nav-items"><a href="forums.html">Home</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div class="brand">DIScussHUB</div>
+        </div>
+        <!-- search box -->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="everything">Everything</option>
+                    <option value="titles">Titles</option>
+                    <option value="desciptions">Descriptions</option>
+                </select>
+                <input type="text" name="q" id="" placeholder="search...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!-- navigation -->
+        <div class="navigate">
+            <span><a href="#">DIScussHUB - Forums</a> >> <a href="#">Random topic</a></span>
+        </div>
+        <div class="posts-tables">
+            <div class="table-head">
+                <div class="status">Status</div>
+                <div class="subjects">Subjects</div>
+                <div class="replies">Replies/Views</div>
+                <div class="last-reply">Last Reply</div>
+            </div>
+            <div class="table-row">
+                <div class="status"><i class="fa fa-fire"></i></div>
+                <div class="subjects"><a href="#">Is learning Python worth in 2021?</a>
+                <br>
+                <span>Started by <b><a href="#">User</a></b></span>
+                </div>
+                <div class="replies">
+                    2 replies <br>125 views
+                </div>
+                <div class="last-reply">
+                    Oct 12 2021
+                    <br>
+                    By <b><a href="#">User</a></b>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="status"><i class="fa fa-frown-o"></i></div>
+                <div class="subjects"><a href="#">Is learning Python worth in 2021?</a>
+                <br>
+                <span>Started by <b><a href="#">User</a></b></span>
+                </div>
+                <div class="replies">
+                    2 replies <br>125 views
+                </div>
+                <div class="last-reply">
+                    Oct 12 2021
+                    <br>
+                    By <b><a href="#">User</a></b>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="status"><i class="fa fa-book"></i></div>
+                <div class="subjects"><a href="#">Is learning Python worth in 2021?</a>
+                <br>
+                <span>Started by <b><a href="#">User</a></b></span>
+                </div>
+                <div class="replies">
+                    2 replies <br>125 views
+                </div>
+                <div class="last-reply">
+                    Oct 12 2021
+                    <br>
+                    By <b><a href="#">User</a></b>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="status"><i class="fa fa-rocket"></i></div>
+                <div class="subjects"><a href="#">Is learning Python worth in 2021?</a>
+                <br>
+                <span>Started by <b><a href="#">User</a></b></span>
+                </div>
+                <div class="replies">
+                    2 replies <br>125 views
+                </div>
+                <div class="last-reply">
+                    Oct 12 2021
+                    <br>
+                    By <b><a href="#">User</a></b>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="status"><i class="fa fa-lock"></i></div>
+                <div class="subjects"><a href="#">Is learning Python worth in 2021?</a>
+                <br>
+                <span>Started by <b><a href="#">User</a></b></span>
+                </div>
+                <div class="replies">
+                    2 replies <br>125 views
+                </div>
+                <div class="last-reply">
+                    Oct 12 2021
+                    <br>
+                    By <b><a href="#">User</a></b>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="status"><i class="fa fa-fire"></i></div>
+                <div class="subjects"><a href="#">Is learning Python worth in 2021?</a>
+                <br>
+                <span>Started by <b><a href="#">User</a></b></span>
+                </div>
+                <div class="replies">
+                    2 replies <br>125 views
+                </div>
+                <div class="last-reply">
+                    Oct 12 2021
+                    <br>
+                    By <b><a href="#">User</a></b>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="status"><i class="fa fa-fire"></i></div>
+                <div class="subjects"><a href="#">Is learning Python worth in 2021?</a>
+                <br>
+                <span>Started by <b><a href="#">User</a></b></span>
+                </div>
+                <div class="replies">
+                    2 replies <br>125 views
+                </div>
+                <div class="last-reply">
+                    Oct 12 2021
+                    <br>
+                    By <b><a href="#">User</a></b>
+                </div>
+            </div>
+        </div>
+        <!-- pagination -->
+        <div class="pagination">
+            pages: <a href="#">1</a><a href="#">2</a><a href="#">3</a>
+
+        </div>
+        <!-- status notes -->
+        <div class="notes">
+            <span>
+                <i class="fa fa-frown-o"></i>&nbsp; 0 engagement topic <br>
+            </span>
+            <span>
+                <i class="fa fa-book"></i>&nbsp; low engagement topic <br>
+            </span>
+            <span>
+                <i class="fa fa-fire"></i>&nbsp; popular engagement topic <br>
+            </span>
+            <span>
+                <i class="fa fa-rocket"></i>&nbsp; high engagement topic <br>
+            </span>
+            <span>
+                <i class="fa fa-lock"></i>&nbsp; closed topic
+            </span>
+        </div>
+    </div>
+    <footer>
+        <span>&copy; &nbsp; Sarim Khan | All Rights Reserved</span>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
