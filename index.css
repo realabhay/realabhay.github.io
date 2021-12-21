@@ -81,7 +81,7 @@ a{
 
 
   .navigation{
-      background-color: aqua;
+      background-color: rgb(130, 209, 209);
       margin-bottom: 5px;
       padding: 3px 0px;
       text-align: center;
@@ -96,6 +96,7 @@ a{
       font-size: 25px;
       font-weight: 100;
       text-decoration: none;
+      margin: 5px 0px;
   }
 
   .button:hover{
