@@ -1,0 +1,102 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+}
+/* navbar */
+#navbar{
+    background: white;
+    overflow: auto;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+#navbar h1{
+    font-size: 1.3rem;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0.7rem 0.7rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+}
+#navbar ul li a:hover{
+    background: #333;
+    color: #fff;
+}
+/* section */
+#main-section{
+    height: 67vh;
+}
+.container{
+    max-width: 1100px;
+    overflow: auto;
+    margin: auto;
+    padding: 0 15px;
+    margin-top: 120px;
+}
+.container .section-heading{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.container .items{
+    display: flex;
+    justify-content: space-between;
+}
+.container .items .item{
+    border: solid 1px #333333;
+    border-radius: 10px;
+    height: 15rem;
+    width: 12rem;
+    background: #333333;
+    color:#fff;
+}
+.container .items .item .departments{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 60px;
+    font-size: 1.2rem;
+}
+.container .items .item .subdiv1,.container .items .item .subdiv2{
+    height: 2rem;
+    width: 4rem;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    margin-left: 4rem;
+}
+.container .items .item .subdiv1{
+    margin-bottom: 20px;
+}
+.container .items .item .subdiv1 .sem,.container .items .item .subdiv2 .sem{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.container .items .item .link-departments{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* footer */
+.main-footer{
+    padding: 1rem 0;
+}
+.main-footer p{
+    text-align: center;
+    font-size: 1.3rem;
+
+}
