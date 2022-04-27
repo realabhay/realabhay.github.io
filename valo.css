@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    background-color: rgb(253, 242, 228);
+    text-align: center;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.header:hover{
+    cursor: pointer;
+    background-color: rgb(255, 222, 180);
+    color: rgb(211, 52, 52);
+}
+
+.agentShowcase{
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.agentImg{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-top: 10px;
+}
+
+.agentFrame{
+    display: inline-block;
+    background-color: rgb(133, 141, 22);
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10%;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.agentFrame:hover{
+    cursor: pointer;
+}
+
+img{
+    display: inline-block;
+}
