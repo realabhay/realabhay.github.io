@@ -29,9 +29,11 @@ function errorLocation()
 
 }
 
+var map;
+
 function setupMap(center)
 {
-    const map = new mapboxgl.Map({
+    map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/dark-v10',
     center: center,
@@ -103,8 +105,10 @@ function setupMap(center)
   .addTo(map);
   
   }
+    
+}
 
-  map.on('load', async () => {
+async function showBus(){
     // Get the initial location of the International Space Station (ISS).
     const geojson = await getLocation();
     // Add the ISS location as a source.
@@ -166,8 +170,5 @@ function setupMap(center)
         };
       
     }
-  });
-      
-    
 }
 
