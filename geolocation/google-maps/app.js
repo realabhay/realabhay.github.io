@@ -18,6 +18,7 @@ navigator.geolocation.getCurrentPosition(successLocation, errorLocation, { enabl
 
 var longitude;
 var latitude;
+var centeredOnce = false;
 
 function successLocation(position)
 {
@@ -82,7 +83,7 @@ function setupMap(center)
           },
           properties: {
             title: 'Bus Stop',
-            description: 'CST Bus Stop'
+            description: 'Shivaji Maharaj Chowk'
           }
         }
       ]
@@ -148,10 +149,13 @@ async function showBus(){
         console.log(latitude);
 
         // Fly the map to the location.
-        map.flyTo({
-          center: [longitude, latitude],
-          speed: 0.5
-        });
+        if (centeredOnce == false){
+          map.flyTo({
+            center: [longitude, latitude],
+            speed: 0.5
+          });
+          centeredOnce=true;
+        }
 
         console.log(longitude);
 
@@ -172,3 +176,36 @@ async function showBus(){
     }
 }
 
+function busSelect(){
+  var stop = document.querySelector("#busStopField").value
+  var A = document.querySelector('.mapboxgl-ctrl-geocoder');
+
+  switch(stop) {
+    case "DY Patil Bus Stop":
+      //focus on the bus stop
+      map.flyTo({
+        center: [73.02445,19.04587],
+        speed: 1
+      });
+      document.querySelector('div.mapboxgl-ctrl-geocoder').childNodes[1].value = "73.02445,19.04587";
+      document.querySelectorAll("div.marker")[0].click();
+      break;
+    case "LP Bus Stop":
+      // code block
+      map.flyTo({
+        center: [73.02419,19.04695],
+        speed:1
+      });
+      document.querySelector('div.mapboxgl-ctrl-geocoder').childNodes[1].value = "73.02419,19.04695";
+      break;
+    case "Shivaji Maharaj Chowk":
+      map.flyTo({
+        center: [73.02302579655598, 19.044382161565384],
+        speed: 1
+      });
+      document.querySelector('div.mapboxgl-ctrl-geocoder').childNodes[1].value = "73.0230257, 19.044382";
+      break;
+    default:
+      console.log("error in busSelect()");
+  }
+}
