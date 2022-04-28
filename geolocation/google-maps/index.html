@@ -46,6 +46,9 @@
         .label{
             margin: 10px;
         }
+        .input{
+            margin-bottom: 7px;
+        }
         .btn-stop{
             margin: 10px;
         }
@@ -56,7 +59,7 @@
         {
             color: white;   
             margin-bottom: 40px;
-            margin-top: 70px;         
+            margin-top: 180px;         
         }
         .white-color{
             color: white;
@@ -64,15 +67,12 @@
     </style>
 </head>
 <body>
-    <div id="first">
-        <label for="Enter your Bus Stop"></label>
-    </div>
     <div id="user-input">
         <h2 class="text-center">FastBus</h2>
         <form>
             <div class="form-group">
               <label for="BusStop" class="label white-color">Enter Bus Stop</label>
-              <input type="search" list="stops" class="form-control" id="busStopField" aria-describedby="emailHelp" placeholder="Enter Bus Stop">
+              <input type="search" list="stops" class="form-control input" id="busStopField" aria-describedby="emailHelp" placeholder="Enter Bus Stop">
               <datalist id="stops">
                   <option value="DY Patil Bus Stop">
                   <option value="LP Bus Stop">
@@ -91,7 +91,7 @@
     <div id='map'></div>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-    <button onclick="showBus()">Show Bus</button> 
+    <!-- <button onclick="showBus()">Show Bus</button>  -->
     <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
     <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"  type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
